@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaitHandleCancellationTokenWithMRES", "WaitHandleCancellationTokenWithMRES.csproj", "{D8A6FB4E-4622-4763-92EE-EDC221DBFA8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8A6FB4E-4622-4763-92EE-EDC221DBFA8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8A6FB4E-4622-4763-92EE-EDC221DBFA8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8A6FB4E-4622-4763-92EE-EDC221DBFA8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8A6FB4E-4622-4763-92EE-EDC221DBFA8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6B38D3D-E8FF-48C7-AB0A-130E2BDAF373}
+	EndGlobalSection
+EndGlobal
