@@ -18,3 +18,4 @@
 - [Suspend and Resume Thread](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/SuspendResumeThread/Program.cs) - приклад використання методу Thread.Sleep() для призупинення потоку та використання застарілих методів Suspend() та Resume().
 - [Abort Thread](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/AbortThread/Program.cs) - демонстрація використання застарілого способу примусового завершення виконання потоку за допомогою методу Abort(). Не рекомендований підхід, краще використовувати Cancellation Token.
 - [Cancellation Token Example](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/CancellationTokenExample/Program.cs) - приклад базового використання Cancellation Token для завершення виконання потоку.
+- [Thread Priority Example](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/ThreadPriorityExample/Program.cs) - приклад налаштування пріоритету потоків за допомогою властивості ThreadPriority.
