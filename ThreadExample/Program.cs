@@ -5,8 +5,8 @@ public class Program
 {
     static void Main()
     {
-        Console.WriteLine("\n===Потоки без параметрів===\n");
-        #region Потоки без параметрів
+        Console.WriteLine("\n===Потік без параметрів===\n");
+        #region Потік без параметрів
         // Створення потоку з делегатом початку потоку
         Thread threadNoParams = new Thread(new ThreadStart(ThreadMethodNoParams));
         // Запуск потоку
@@ -18,8 +18,8 @@ public class Program
         }
         #endregion
 
-        Console.WriteLine("\n===Потоки з параметром===\n");
-        #region Потоки з параметром
+        Console.WriteLine("\n===Потік з параметром===\n");
+        #region Потік з параметром
         Thread threadWithParams = new Thread(new ParameterizedThreadStart(ThreadMethodWithParam));
 
         threadWithParams.Start("Message from Main to Thread");
@@ -30,8 +30,8 @@ public class Program
         }
         #endregion
 
-        Console.WriteLine("\n===Потоки з параметром (через лямбду)===\n");
-        #region Потоки з параметром (через лямбду)
+        Console.WriteLine("\n===Потік з параметром (через лямбду)===\n");
+        #region Потік з параметром (через лямбду)
         string msg = "Message from Main to Thread!";
         Thread threadWithLambda = new Thread(() => MethodWithParam(msg));
 
@@ -46,28 +46,20 @@ public class Program
         #region Thread.Sleep()
         Console.WriteLine("Sleep на 10 секунд.");
         Thread.Sleep(10000);
-        Console.WriteLine("Прокидання потоку та завершення програми");
+        Console.WriteLine("Прокидання потоку - продовження виконання");
         #endregion
 
         #region Thread.CurrentThread GetHashCode()
         Thread newThread = new Thread(() =>
         {
-            for (int i = 0; i < 1000; i++)
-            {
-                Thread thisThread = Thread.CurrentThread;
-                Console.WriteLine($"Thread hashcode: {thisThread.GetHashCode()}");
-            }
+            Thread thisThread = Thread.CurrentThread;
+            Console.WriteLine($"Thread hashcode: {thisThread.GetHashCode()}");
         });
 
         newThread.Start();
 
-        for (int i = 0; i < 1000; i++)
-        {
-            Console.WriteLine($"Hashcode in Main: {newThread.GetHashCode()}");
-        }
+        Console.WriteLine($"Hashcode in Main: {newThread.GetHashCode()}");
         #endregion
-
-        
     }
     // Метод - вхідна точка в новий потік
     private static void ThreadMethodNoParams()

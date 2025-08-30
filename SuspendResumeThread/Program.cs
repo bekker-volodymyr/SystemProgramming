@@ -1,6 +1,4 @@
-﻿using System.Threading.Tasks.Dataflow;
-
-namespace SuspendResumeThread;
+﻿namespace SuspendResumeThread;
 
 public class Program
 {
@@ -15,16 +13,19 @@ public class Program
             }
         });
 
+        thread.Start();
+
         Console.WriteLine("Press any key to pause the thread");
         Console.ReadKey();
 
-        Console.WriteLine("Prcess is paused.");
+        Console.WriteLine("Process is paused.");
         thread.Suspend();
 
         Console.WriteLine("Press any key to resume thread");
         Console.ReadKey();
 
         Console.WriteLine("Thread is resumed");
+        thread.Resume();
 
         Console.WriteLine("Press any key to close the app.");
         Console.ReadKey();
