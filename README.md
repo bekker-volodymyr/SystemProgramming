@@ -17,3 +17,4 @@
 - [Background Thread](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/BackgroundThread/Program.cs) - приклад створення простого фонового потоку з нескінченним циклом.
 - [Suspend and Resume Thread](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/SuspendResumeThread/Program.cs) - приклад використання методу Thread.Sleep() для призупинення потоку та використання застарілих методів Suspend() та Resume().
 - [Abort Thread](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/AbortThread/Program.cs) - демонстрація використання застарілого способу примусового завершення виконання потоку за допомогою методу Abort(). Не рекомендований підхід, краще використовувати Cancellation Token.
+- [Cancellation Token Example](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/CancellationTokenExample/Program.cs) - приклад базового використання Cancellation Token для завершення виконання потоку.
