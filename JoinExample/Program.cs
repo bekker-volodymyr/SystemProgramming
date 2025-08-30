@@ -10,7 +10,7 @@ class Program
         T.Start();
         Thread.Sleep(200);
         Console.WriteLine("Wait for thread finish");
-        T.Join();
+        T.Join(); // Основний потік очікує завершення потоку T
         Console.WriteLine("End of program");
     }
 
