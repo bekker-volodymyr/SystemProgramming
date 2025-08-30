@@ -10,3 +10,7 @@
 - застосування інструментів синхронізації.
 
 Презентації, що доповнюють даний курс можна знайти за [посиланням](https://drive.google.com/drive/folders/19v3PphTRkWeBbgxWQ9_MD9vXlrUDiPBw?usp=sharing).
+
+## Вміст:
+- [Timer Example](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/TimerExample/Program.cs) - проєкт, що демонструє базове використання класу System.Threading.Timer.
+- [Thread Examples](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/ThreadExample/Program.cs) - даний проєкт демонструє створення потоків за допомогою класу System.Threading.Thread. Він включає приклад потоку без параметрів та з параметром, створення потоку через лямбда-функцію, призупинення потоку за допомогою Thread.Sleep() та отримання хеш-коду (ідентифікатору) потоку за допомогою Thread.GetHashCode().
