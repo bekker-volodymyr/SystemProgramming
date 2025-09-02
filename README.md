@@ -20,3 +20,5 @@
 - [Cancellation Token Example](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/CancellationTokenExample/Program.cs) - приклад базового використання Cancellation Token для завершення виконання потоку.
 - [Thread Priority Example](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/ThreadPriorityExample/Program.cs) - приклад налаштування пріоритету потоків за допомогою властивості ThreadPriority.
 - [Thread Pool Examples](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/ThreadPoolExamples/Program.cs) - приклад використання пулу потоків. Включає додавання в чергу пулу потоків виконавців та отримання доступу до інформації про пул потоків.
+- [Task Examples](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/TaskExamples/Program.cs) - приклад створення та використання асинхронних операцій за допомогою класу Task.
+- [Async Examples](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/AsyncExamples/Program.cs) - приклади використання ключових слів async/await.
