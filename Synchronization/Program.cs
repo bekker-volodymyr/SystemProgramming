@@ -1,6 +1,4 @@
-﻿using System.Threading;
-
-namespace Synchronization
+﻿namespace Synchronization
 {
     class Counter
     {
@@ -72,7 +70,7 @@ namespace Synchronization
 
                 // Виводимо значення лічильника
                 // Очікуємо 50000 - 5 потоків * 10000 збільшень
-                // Але через відсутність синхронізації, значення може бути меншим
+                // Завдяки синхронізації отримуємо очікуваний результат
                 Console.WriteLine($"Counter: {Counter.counter}");
             }
 
@@ -104,7 +102,7 @@ namespace Synchronization
 
                 Console.WriteLine($"Counter: {Counter.counter}");
             }
-            
+
             Counter.counter = 0;
 
             {
@@ -178,7 +176,7 @@ namespace Synchronization
 
                         Console.WriteLine($"Thread {id} exits critical section");
                         semaphore.Release();
-                    } ); 
+                    });
                     threads[i].Start(i);
                 }
             }
@@ -198,7 +196,7 @@ namespace Synchronization
                             Counter.counter++;
                             // Повідомлення іншим потокам, що можна заходити
                             // Заходить найбільший за пріоритетом або той, що першим встиг.
-                            ae.Set(); 
+                            ae.Set();
                         }
                     });
                     threads[i].Start();
