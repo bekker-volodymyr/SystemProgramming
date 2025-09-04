@@ -22,3 +22,4 @@
 - [Thread Pool Examples](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/ThreadPoolExamples/Program.cs) - приклад використання пулу потоків. Включає додавання в чергу пулу потоків виконавців та отримання доступу до інформації про пул потоків.
 - [Task Examples](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/TaskExamples/Program.cs) - приклад створення та використання асинхронних операцій за допомогою класу Task.
 - [Async Examples](https://github.com/bekker-volodymyr/SystemProgramming/blob/master/AsyncExamples/Program.cs) - приклади використання ключових слів async/await.
+- [Synchronization](https://github.com/bekker-volodymyr/SystemProgramming/tree/master/Synchronization) - каталог з прикладами використання основних об'єктів синхронізації. 
