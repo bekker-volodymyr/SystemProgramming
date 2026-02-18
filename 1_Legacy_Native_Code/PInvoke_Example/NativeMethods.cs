@@ -45,5 +45,13 @@ namespace PInvoke_Example
 
             return true;
         }
+
+        [DllImport("kernel32.dll", CharSet = CharSet.Auto)]
+        public static extern bool GetVersionEx(ref OSVERSIONINFO lpVersionInfo);
+
+        [DllImport("kernel32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        public static extern uint GetSystemDirectory(
+        [Out, MarshalAs(UnmanagedType.LPTStr)] StringBuilder lpBuffer,
+        uint uSize);
     }
 }

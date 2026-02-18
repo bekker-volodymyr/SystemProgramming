@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using System.Text;
 
 namespace PInvoke_Example
 {
@@ -25,6 +26,30 @@ namespace PInvoke_Example
             }
 
             NativeMethods.EnumWindows(NativeMethods.OutputWindow, IntPtr.Zero);
+
+            StringBuilder sb = new StringBuilder(260);
+
+            uint result = NativeMethods.GetSystemDirectory(sb, (uint)sb.Capacity);
+
+            if (result > 0)
+            {
+                Console.WriteLine($"Системна директорія: {sb.ToString()}");
+            }
+            else
+            {
+                Console.WriteLine($"Помилка! Код: {Marshal.GetLastWin32Error()}");
+            }
+
+            // Даний приклад не працює, бо функція GetVersionEx вважається застарілою та повертає false
+            OSVERSIONINFO os = new OSVERSIONINFO();
+            os.dwOSVersionInfoSize = Marshal.SizeOf(typeof(OSVERSIONINFO));
+
+            if (NativeMethods.GetVersionEx(ref os))
+            {
+                Console.WriteLine($"Версія: {os.dwMajorVersion}.{os.dwMinorVersion}");
+                Console.WriteLine($"Build: {os.dwBuildNumber}");
+                Console.WriteLine($"Service Pack: {os.szCSDVersion}");
+            }
         }
     }
 }
