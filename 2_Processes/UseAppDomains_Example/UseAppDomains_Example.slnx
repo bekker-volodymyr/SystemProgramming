@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="TextDrawer/TextDrawer.csproj" />
+  <Project Path="TextWindow/TextWindow.csproj" />
   <Project Path="UseAppDomains/UseAppDomains.csproj" />
 </Solution>
