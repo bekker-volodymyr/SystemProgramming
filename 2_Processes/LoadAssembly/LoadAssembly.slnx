@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../PersonLibrary/PersonLibrary.csproj" />
+  <Project Path="LoadAssembly.csproj" />
+</Solution>
