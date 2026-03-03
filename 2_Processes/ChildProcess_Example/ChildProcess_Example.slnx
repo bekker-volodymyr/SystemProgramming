@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ChildProcess_1/ChildProcess_1.csproj" />
+  <Project Path="ChildProcess_2/ChildProcess_2.csproj" />
+  <Project Path="ParentProcess/ParentProcess.csproj" />
+</Solution>
