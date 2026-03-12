@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MagicOracleLib/MagicOracleLib.csproj" />
+  <Project Path="MagicOracleWF/MagicOracleWF.csproj" />
+</Solution>
